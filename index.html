@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/Css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <div class="card">
+    <button class="close" onclick="closeWindow()"><img src="/images/close-icon.svg" alt="" class="close-icon"></button>
+    <div class="icon"><img src="images/icon-star.svg" alt="star icon"></div>
+    <div class="text-container">
+      <h1 class="heading">How did we do?</h1>
+      <p class="rating-text">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+    </div>
+    <div class="rate-container">
+      <div class="ratings">
+        <button class="rates icon" id="rate1">1</button>
+        <button class="rates icon" id="rate2">2</button>
+        <button class="rates icon" id="rate3">3</button>
+        <button class="rates icon" id="rate4">4</button>
+        <button class="rates icon" id="rate5">5</button>
+      </div>
+      <div class="errorField"></div>
+      <button type="submit" id="submit" onclick="submitFunction()">SUBMIT</button>
+    </div>
+  </div>
+
+  <div class="success">
+    <button class="close close2" onclick="closeWindow()"><img src="/images/close-icon.svg" alt="" class="close-icon"></button>
+    <img src="/images/illustration-thank-you.svg" alt="" class="success-img">
+    <div class="selection-return">
+      You selected <span id="rate-output"></span> out of 5
+    </div>
+    <h2 class="thank-you">Thank you!</h2>
+    <p class="thank-you-text">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </div>
+  <dialog open id="dialog">
+    <h4 id="dialog-text">Would you like to re-open the element?</h4>
+    <button id="re-open" onclick="reOpen()">Yes</button>
+  </dialog>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Julia Gaugler</a>.
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
