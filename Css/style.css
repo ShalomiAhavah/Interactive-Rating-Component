@@ -22,6 +22,9 @@ body {
   overflow-x: hidden;
   background: hwb(216 7% 91%);
 }
+button {
+  cursor: pointer;
+}
 .card {
   height: 45vh;
   width: 40vh;
@@ -160,7 +163,7 @@ svg path:hover {
   color: hsl(327, 59%, 72%);
 }
 #dialog {
-  margin: 20vh auto;
+  margin: -50vh auto;
   padding: 3vh;
   color: hsl(217, 12%, 63%);
   background: #1f2630;
